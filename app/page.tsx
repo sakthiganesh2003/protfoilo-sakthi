@@ -352,7 +352,7 @@ export default function Home() {
     </h2>
     <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-lg">
       <p className="text-lg text-gray-700 mb-8 text-center">
-        I'm excited to connect! Reach out via email or social media for collaborations or inquiries.
+        Im excited to connect! Reach out via email or social media for collaborations or inquiries.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow duration-300">
