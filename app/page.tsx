@@ -229,7 +229,7 @@ export default function Home() {
           </div>
           
           <a 
-            href="/SAKTHIGANESH-resume-1.pdf" 
+            href="/SAKTHIGANESH-R-resume.pdf" 
             download="SAKTHIGANESH_Resume.pdf" 
             className="mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 transition-all duration-300 shadow-md hover:shadow-lg"
             aria-label="Download resume PDF"
