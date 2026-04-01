@@ -48,7 +48,7 @@ export default function Home() {
                   Available for new opportunities
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-                  <span className="block text-white mb-2">Hi, I'm</span>
+                  <span className="block text-white mb-2">Hi, I&apos;m</span>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 leading-snug">SAKTHIGANESH</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed font-light max-w-2xl">
@@ -92,7 +92,7 @@ export default function Home() {
               
               <div className="text-center md:text-left space-y-8">
                 <p className="text-xl md:text-2xl leading-relaxed text-slate-300 font-light">
-                  I'm a dedicated <span className="font-semibold text-white">Full Stack Developer</span> specialized in building scalable, modern architectural solutions using <span className="text-indigo-400 font-medium tracking-wide">Next.js</span>, <span className="text-blue-400 font-medium tracking-wide">TypeScript</span>, and <span className="text-teal-400 font-medium tracking-wide">Tailwind CSS</span>.
+                  I&apos;m a dedicated <span className="font-semibold text-white">Full Stack Developer</span> specialized in building scalable, modern architectural solutions using <span className="text-indigo-400 font-medium tracking-wide">Next.js</span>, <span className="text-blue-400 font-medium tracking-wide">TypeScript</span>, and <span className="text-teal-400 font-medium tracking-wide">Tailwind CSS</span>.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-slate-400 font-light">
                   My philosophy centers on beautiful UI and robust backend systems. I recently developed RESTful services and payment-integrated platforms as part of my professional journey, always striving for performance optimization and pixel-perfect precision design.
@@ -221,7 +221,7 @@ export default function Home() {
                 <div className="p-8 flex flex-col flex-grow bg-slate-900/40 rounded-b-[1.8rem]">
                   <h3 className="text-2xl font-bold mb-3 text-white">Food AI Kitchen</h3>
                   <p className="text-slate-400 mb-6 flex-grow leading-relaxed font-light">
-                    An advanced AI-powered recipe generator providing personalized culinary guidance. Features a sleek "Warm Amber" thematic interface with multi-language capabilities.
+                    An advanced AI-powered recipe generator providing personalized culinary guidance. Features a sleek &quot;Warm Amber&quot; thematic interface with multi-language capabilities.
                   </p>
                   <div className="flex flex-wrap gap-2 mb-8">
                     {['Next.js', 'Gemini AI', 'Tailwind', 'Vercel'].map(tag => (
@@ -310,10 +310,10 @@ export default function Home() {
         <section id="contact" className="py-24 px-4 relative z-10 bg-slate-900/30 border-t border-slate-800">
           <div className="container mx-auto max-w-5xl text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="text-white">Let's Connect</span>
+              <span className="text-white">Let&apos;s Connect</span>
             </h2>
             <p className="text-xl text-slate-400 font-light mb-16 max-w-2xl mx-auto">
-              I'm always eager to collaborate on visionary projects. Drop a line for opportunities, inquiries, or coffee chats.
+              I&apos;m always eager to collaborate on visionary projects. Drop a line for opportunities, inquiries, or coffee chats.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
