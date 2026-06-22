@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link 
           href="/" 
-          className="font-extrabold text-2xl tracking-tighter bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          className="font-extrabold text-2xl tracking-tighter bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
         >
           SakthiGanesh
         </Link>
@@ -24,7 +24,7 @@ export default function Navbar() {
               className="text-slate-300 hover:text-white transition-colors font-medium text-sm tracking-wide relative group"
             >
               {item}
-              <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
+              <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-emerald-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
             </a>
           ))}
           <a href="#resume" className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-sm font-semibold backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl">

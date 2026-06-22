@@ -33,9 +33,9 @@ export default function Home() {
         
         {/* Ambient Dark Mode Background Effects */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-indigo-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[10000ms]"></div>
-          <div className="absolute top-[40%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-purple-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[8000ms] delay-1000"></div>
-          <div className="absolute bottom-[-20%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-blue-900/10 blur-[150px] mix-blend-screen opacity-60"></div>
+          <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[10000ms]"></div>
+          <div className="absolute top-[40%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-emerald-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[8000ms] delay-1000"></div>
+          <div className="absolute bottom-[-20%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-teal-900/10 blur-[150px] mix-blend-screen opacity-60"></div>
         </div>
 
         {/* Hero Section */}
@@ -43,19 +43,19 @@ export default function Home() {
           <div className="container mx-auto max-w-7xl relative z-10">
             <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} flex flex-col md:flex-row items-center justify-between gap-16`}>
               <div className="md:w-1/2 text-center md:text-left z-20">
-                <div className="inline-flex items-center px-3 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8 backdrop-blur-md">
-                  <span className="flex w-2 h-2 rounded-full bg-indigo-500 mr-2 animate-pulse"></span>
+                <div className="inline-flex items-center px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-8 backdrop-blur-md">
+                  <span className="flex w-2 h-2 rounded-full bg-cyan-500 mr-2 animate-pulse"></span>
                   Available for new opportunities
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
                   <span className="block text-white mb-2">Hi, I&apos;m</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 leading-snug">SAKTHIGANESH</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 leading-snug">SAKTHIGANESH</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed font-light max-w-2xl">
                   A passionate Full Stack Developer crafting exceptional, high-performance digital experiences.
                 </p>
                 <div className="flex flex-wrap gap-5 justify-center md:justify-start">
-                  <a href="#projects" className="px-8 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-200 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95">
+                  <a href="#projects" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950 font-bold rounded-full hover:opacity-90 transition-all duration-300 shadow-[0_0_40px_rgba(6,182,212,0.35)] hover:scale-105 active:scale-95">
                     Explore My Work
                   </a>
                   <a href="#contact" className="px-8 py-4 bg-slate-900/50 text-white font-bold rounded-full border border-slate-700 hover:bg-slate-800 transition-all duration-300 backdrop-blur-md hover:scale-105 active:scale-95">
@@ -65,8 +65,9 @@ export default function Home() {
               </div>
               
               <div className="md:w-1/2 flex justify-center md:justify-end z-20">
-                <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] group">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-spin-slow"></div>
+                <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] group animate-float">
+                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-cyan-500/20 rounded-full blur-xl animate-shadow-pulse z-0 pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 via-teal-500 to-emerald-500 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-spin-slow"></div>
                   <div className="absolute inset-2 bg-slate-950 rounded-full z-10"></div>
                   <Image
                     src="/images/Gemini_Generated_Image_alsfmpalsfmpalsf.jpg"
@@ -84,15 +85,15 @@ export default function Home() {
         <section id="about" className="py-24 px-4 relative z-10">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">About Me</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">About Me</span>
             </h2>
             
-            <div className="bg-slate-900/50 backdrop-blur-xl rounded-[2.5rem] border border-slate-800 p-8 md:p-14 shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+            <div className="bg-slate-900/50 backdrop-blur-xl rounded-[2.5rem] border border-slate-800 p-8 md:p-14 shadow-2xl relative overflow-hidden group hover:border-cyan-500/30 transition-all duration-500 hover:scale-[1.01]">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 opacity-50 group-hover:opacity-100 transition-opacity"></div>
               
               <div className="text-center md:text-left space-y-8">
                 <p className="text-xl md:text-2xl leading-relaxed text-slate-300 font-light">
-                  I&apos;m a dedicated <span className="font-semibold text-white">Full Stack Developer</span> specialized in building scalable, modern architectural solutions using <span className="text-indigo-400 font-medium tracking-wide">Next.js</span>, <span className="text-blue-400 font-medium tracking-wide">TypeScript</span>, and <span className="text-teal-400 font-medium tracking-wide">Tailwind CSS</span>.
+                  I&apos;m a dedicated <span className="font-semibold text-white">Full Stack Developer</span> specialized in building scalable, modern architectural solutions using <span className="text-cyan-400 font-medium tracking-wide">Next.js</span>, <span className="text-blue-400 font-medium tracking-wide">TypeScript</span>, and <span className="text-teal-400 font-medium tracking-wide">Tailwind CSS</span>.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-slate-400 font-light">
                   My philosophy centers on beautiful UI and robust backend systems. I recently developed RESTful services and payment-integrated platforms as part of my professional journey, always striving for performance optimization and pixel-perfect precision design.
@@ -106,7 +107,7 @@ export default function Home() {
         <section id="skills" className="py-24 px-4 relative z-10">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Technical Arsenal</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Technical Arsenal</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
@@ -138,7 +139,7 @@ export default function Home() {
           <div className="container mx-auto max-w-7xl">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Live Showcases</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400">Live Showcases</span>
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto text-lg font-light">Interact with my live projects. Full websites rendered right inside the cards.</p>
             </div>
@@ -286,10 +287,10 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience" className="py-24 px-4 relative z-10 w-full">
-          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 w-full max-w-4xl h-full bg-indigo-900/10 blur-[100px] pointer-events-none rounded-full"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 w-full max-w-4xl h-full bg-cyan-900/10 blur-[100px] pointer-events-none rounded-full"></div>
           <div className="container mx-auto max-w-4xl relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-20 text-center">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Professional Journey</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Professional Journey</span>
             </h2>
             
             <div className="relative border-l border-slate-800 ml-4 md:mx-auto md:border-l-0">
@@ -337,14 +338,14 @@ export default function Home() {
         {/* Resume Section */}
         <section id="resume" className="py-24 px-4 relative z-10">
           <div className="container mx-auto max-w-4xl text-center">
-             <div className="bg-gradient-to-br from-indigo-900/40 to-purple-900/40 backdrop-blur-xl p-12 md:p-16 rounded-[3rem] border border-indigo-500/30 shadow-2xl relative overflow-hidden group">
-               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+             <div className="bg-gradient-to-br from-cyan-950/40 to-emerald-950/40 backdrop-blur-xl p-12 md:p-16 rounded-[3rem] border border-cyan-500/30 shadow-2xl relative overflow-hidden group hover:border-cyan-500/50 transition-all duration-500">
+               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white relative z-10">Ready to Review My Full History?</h2>
                <p className="text-xl text-slate-300 font-light mb-10 max-w-2xl mx-auto relative z-10">Get a complete download of my professional background, education, and extensive tech stack expertise.</p>
                <a 
                  href="/SAKTHIGANESH-R-resume.pdf" 
                  download="SAKTHIGANESH_Resume.pdf" 
-                 className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold rounded-full text-slate-900 bg-white hover:bg-indigo-50 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 relative z-10"
+                 className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold rounded-full text-slate-900 bg-white hover:bg-cyan-50 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 relative z-10 animate-pulse hover:animate-none"
                >
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -376,13 +377,13 @@ export default function Home() {
                   href={contact.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-slate-900/50 backdrop-blur-xl p-10 rounded-3xl border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-800 transition-all duration-500 group flex flex-col items-center shadow-xl hover:-translate-y-2"
+                  className="bg-slate-900/50 backdrop-blur-xl p-10 rounded-3xl border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-500 group flex flex-col items-center shadow-xl hover:-translate-y-2"
                 >
-                  <div className="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 flex items-center justify-center mb-6 text-white group-hover:bg-indigo-500 group-hover:border-indigo-400 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <div className="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 flex items-center justify-center mb-6 text-white group-hover:bg-cyan-500 group-hover:border-cyan-400 group-hover:scale-110 transition-all duration-300 shadow-lg">
                     <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={contact.icon} /></svg>
                   </div>
                   <h3 className="text-white font-bold mb-2 text-lg tracking-wide">{contact.label}</h3>
-                  <span className="text-slate-400 text-sm font-medium group-hover:text-indigo-300 transition-colors">{contact.value}</span>
+                  <span className="text-slate-400 text-sm font-medium group-hover:text-cyan-300 transition-colors">{contact.value}</span>
                 </a>
               ))}
             </div>
@@ -401,18 +402,40 @@ export default function Home() {
           background: #030014;
         }
         ::-webkit-scrollbar-thumb {
-          background: #1e1b4b;
+          background: #06b6d4;
           border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-          background: #4338ca;
+          background: #10b981;
         }
         .animate-spin-slow {
-          animation: spin 15s linear infinite;
+          animation: spin 20s linear infinite;
+        }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        .animate-shadow-pulse {
+          animation: shadowPulse 6s ease-in-out infinite;
         }
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-15px); }
+        }
+        @keyframes shadowPulse {
+          0%, 100% {
+            transform: scale(0.9) translateX(-50%);
+            opacity: 0.4;
+            filter: blur(15px);
+          }
+          50% {
+            transform: scale(1.1) translateX(-50%);
+            opacity: 0.75;
+            filter: blur(25px);
+          }
         }
       `}</style>
     </div>
