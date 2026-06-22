@@ -190,7 +190,95 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Project 2 */}
+              <div className="bg-slate-900/60 backdrop-blur-xl rounded-[2rem] border border-slate-800 p-2 flex flex-col h-full hover:border-slate-700 transition-colors shadow-2xl relative group">
+                {/* Browser Mockup Header */}
+                <div className="h-12 border-b border-slate-800 flex items-center px-4 bg-slate-950/50 rounded-t-[1.8rem]">
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+                  </div>
+                  <div className="mx-auto bg-slate-800/50 rounded-full px-4 py-1 text-xs text-slate-400 font-mono flex items-center">
+                    <svg className="w-3 h-3 mr-2 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    chimney-doctors
+                  </div>
+                </div>
+                {/* Iframe Container */}
+                <div className="relative h-[450px] w-full bg-slate-950 overflow-hidden isolate">
+                  <div className="absolute inset-0 z-10 pointer-events-none rounded-b shadow-[inset_0_4px_20px_rgba(0,0,0,0.5)]"></div>
+                  {/* The interactive iframe */}
+                  <iframe 
+                    src="https://chimney-frontend.vercel.app" 
+                    className="w-full h-full border-0 absolute inset-0 z-0 bg-white"
+                    title="Chimney Doctors"
+                    loading="lazy"
+                  />
+                  {/* Overlay prompt to open full external */}
+                  <div className="absolute bottom-4 right-4 z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="https://chimney-frontend.vercel.app" target="_blank" rel="noopener noreferrer" className="pointer-events-auto bg-slate-900/90 hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold backdrop-blur-md border border-slate-700 shadow-xl flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+                      Open Full Screen <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="p-8 flex flex-col flex-grow bg-slate-900/40 rounded-b-[1.8rem]">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Chimney Doctors</h3>
+                  <p className="text-slate-400 mb-6 flex-grow leading-relaxed font-light">
+                    An on-demand professional booking platform for kitchen chimneys, offering deep cleaning, installation, and repairs with a transparent service pricing engine.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['Next.js', 'React', 'Supabase', 'Tailwind', 'TypeScript'].map(tag => (
+                      <span key={tag} className="bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 text-xs px-3 py-1.5 rounded-lg font-medium tracking-wide">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
+              {/* Project 3 */}
+              <div className="bg-slate-900/60 backdrop-blur-xl rounded-[2rem] border border-slate-800 p-2 flex flex-col h-full hover:border-slate-700 transition-colors shadow-2xl relative group">
+                {/* Browser Mockup Header */}
+                <div className="h-12 border-b border-slate-800 flex items-center px-4 bg-slate-950/50 rounded-t-[1.8rem]">
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+                  </div>
+                  <div className="mx-auto bg-slate-800/50 rounded-full px-4 py-1 text-xs text-slate-400 font-mono flex items-center">
+                    <svg className="w-3 h-3 mr-2 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    silkthread-tailoring
+                  </div>
+                </div>
+                {/* Iframe Container */}
+                <div className="relative h-[450px] w-full bg-slate-950 overflow-hidden isolate">
+                  <div className="absolute inset-0 z-10 pointer-events-none rounded-b shadow-[inset_0_4px_20px_rgba(0,0,0,0.5)]"></div>
+                  {/* The interactive iframe */}
+                  <iframe 
+                    src="https://skill-thread-frontend.vercel.app/" 
+                    className="w-full h-full border-0 absolute inset-0 z-0 bg-white"
+                    title="Silkthread - Custom Tailoring"
+                    loading="lazy"
+                  />
+                  {/* Overlay prompt to open full external */}
+                  <div className="absolute bottom-4 right-4 z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href="https://skill-thread-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="pointer-events-auto bg-slate-900/90 hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold backdrop-blur-md border border-slate-700 shadow-xl flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+                      Open Full Screen <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="p-8 flex flex-col flex-grow bg-slate-900/40 rounded-b-[1.8rem]">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Silkthread - Custom Tailoring</h3>
+                  <p className="text-slate-400 mb-6 flex-grow leading-relaxed font-light">
+                    A premium bespoke tailoring e-commerce application. Customers submit and reuse body measurements, pick custom fabrics, style garment designs, and track their order through local master tailors.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['Next.js', 'React', 'TypeScript', 'Tailwind', 'State Management'].map(tag => (
+                      <span key={tag} className="bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 text-xs px-3 py-1.5 rounded-lg font-medium tracking-wide">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
