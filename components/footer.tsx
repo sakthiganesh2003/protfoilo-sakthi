@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-800/50 text-slate-400 py-12 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent inline-block mb-2">SakthiGanesh</h3>
+            <h3 className="text-xl font-bold bg-gradient-to-r from-violet-400 via-cyan-400 to-pink-400 bg-clip-text text-transparent inline-block mb-2">SakthiGanesh</h3>
             <p className="text-sm">
               © {new Date().getFullYear()} SakthiGanesh. All rights reserved.
             </p>
@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg hover:shadow-cyan-500/20"
+              className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg hover:shadow-violet-500/20"
             >
               <svg
                 className="w-4 h-4"
@@ -33,7 +33,7 @@ export default function Footer() {
               href="https://github.com/sakthiganesh2003"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
+              className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg hover:shadow-pink-500/20"
             >
               <svg
                 className="w-5 h-5"

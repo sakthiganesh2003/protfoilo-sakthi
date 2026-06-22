@@ -31,11 +31,15 @@ export default function Home() {
       <main className="flex-grow relative overflow-x-hidden">
         <Navbar />
         
-        {/* Ambient Dark Mode Background Effects */}
+        {/* Ambient Dark Mode Background Effects & Lights */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-cyan-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[10000ms]"></div>
-          <div className="absolute top-[40%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-emerald-900/20 blur-[120px] mix-blend-screen opacity-50 animate-pulse duration-[8000ms] delay-1000"></div>
-          <div className="absolute bottom-[-20%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-teal-900/10 blur-[150px] mix-blend-screen opacity-60"></div>
+          {/* Top Spotlight */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[50vh] bg-gradient-to-b from-violet-600/15 via-cyan-500/5 to-transparent blur-[100px] rounded-full"></div>
+          
+          {/* Aurora Drifting Blobs */}
+          <div className="absolute top-[-5%] left-[-5%] w-[50vw] h-[50vw] rounded-full bg-violet-600/10 blur-[130px] mix-blend-screen animate-aurora-slow"></div>
+          <div className="absolute top-[35%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-cyan-500/10 blur-[120px] mix-blend-screen animate-aurora-medium"></div>
+          <div className="absolute bottom-[-10%] left-[10%] w-[60vw] h-[60vw] rounded-full bg-pink-500/5 blur-[150px] mix-blend-screen animate-aurora-fast"></div>
         </div>
 
         {/* Hero Section */}
@@ -49,16 +53,16 @@ export default function Home() {
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
                   <span className="block text-white mb-2">Hi, I&apos;m</span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 leading-snug">SAKTHIGANESH</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-cyan-400 to-pink-400 leading-snug">SAKTHIGANESH</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed font-light max-w-2xl">
                   A passionate Full Stack Developer crafting exceptional, high-performance digital experiences.
                 </p>
                 <div className="flex flex-wrap gap-5 justify-center md:justify-start">
-                  <a href="#projects" className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950 font-bold rounded-full hover:opacity-90 transition-all duration-300 shadow-[0_0_40px_rgba(6,182,212,0.35)] hover:scale-105 active:scale-95">
+                  <a href="#projects" className="px-8 py-4 bg-gradient-to-r from-violet-500 via-cyan-500 to-pink-500 text-white font-bold rounded-full hover:opacity-90 transition-all duration-300 shadow-[0_0_40px_rgba(139,92,246,0.35)] hover:scale-105 active:scale-95">
                     Explore My Work
                   </a>
-                  <a href="#contact" className="px-8 py-4 bg-slate-900/50 text-white font-bold rounded-full border border-slate-700 hover:bg-slate-800 transition-all duration-300 backdrop-blur-md hover:scale-105 active:scale-95">
+                  <a href="#contact" className="px-8 py-4 bg-slate-900/50 text-white font-bold rounded-full border border-slate-700 hover:bg-slate-850 transition-all duration-300 backdrop-blur-md hover:scale-105 active:scale-95">
                     Contact Me
                   </a>
                 </div>
@@ -66,8 +70,15 @@ export default function Home() {
               
               <div className="md:w-1/2 flex justify-center md:justify-end z-20">
                 <div className="relative w-72 h-72 md:w-[400px] md:h-[400px] group animate-float">
-                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-cyan-500/20 rounded-full blur-xl animate-shadow-pulse z-0 pointer-events-none"></div>
-                  <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 via-teal-500 to-emerald-500 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-spin-slow"></div>
+                  {/* Outer glowing light waves */}
+                  <div className="absolute inset-[-20px] rounded-full bg-gradient-to-r from-violet-600/20 via-cyan-500/20 to-pink-500/20 blur-3xl opacity-30 animate-pulse duration-[4000ms] pointer-events-none"></div>
+                  <div className="absolute inset-[-10px] rounded-full bg-gradient-to-r from-violet-500/35 via-cyan-400/35 to-pink-500/35 blur-2xl opacity-40 animate-pulse duration-[6000ms] delay-500 pointer-events-none"></div>
+                  
+                  {/* Glowing shadow effect at the bottom */}
+                  <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-cyan-500/30 rounded-full blur-2xl animate-shadow-pulse z-0 pointer-events-none"></div>
+                  
+                  {/* Main rotating glow outline */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-violet-500 via-cyan-400 to-pink-500 rounded-full blur-xl opacity-50 group-hover:opacity-85 transition-opacity duration-500 animate-spin-slow"></div>
                   <div className="absolute inset-2 bg-slate-950 rounded-full z-10"></div>
                   <Image
                     src="/images/Gemini_Generated_Image_alsfmpalsfmpalsf.jpg"
@@ -85,11 +96,11 @@ export default function Home() {
         <section id="about" className="py-24 px-4 relative z-10">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">About Me</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-cyan-400 to-pink-400">About Me</span>
             </h2>
             
-            <div className="bg-slate-900/50 backdrop-blur-xl rounded-[2.5rem] border border-slate-800 p-8 md:p-14 shadow-2xl relative overflow-hidden group hover:border-cyan-500/30 transition-all duration-500 hover:scale-[1.01]">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+            <div className="bg-slate-900/50 backdrop-blur-xl rounded-[2.5rem] border border-slate-800 p-8 md:p-14 shadow-2xl relative overflow-hidden group hover:border-violet-500/30 transition-all duration-500 hover:scale-[1.01] card-glow">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-violet-500 via-cyan-400 to-pink-500 opacity-50 group-hover:opacity-100 transition-opacity"></div>
               
               <div className="text-center md:text-left space-y-8">
                 <p className="text-xl md:text-2xl leading-relaxed text-slate-300 font-light">
@@ -402,20 +413,35 @@ export default function Home() {
           background: #030014;
         }
         ::-webkit-scrollbar-thumb {
-          background: #06b6d4;
+          background: #8b5cf6;
           border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-          background: #10b981;
+          background: #ec4899;
         }
         .animate-spin-slow {
-          animation: spin 20s linear infinite;
+          animation: spin 25s linear infinite;
         }
         .animate-float {
           animation: float 6s ease-in-out infinite;
         }
         .animate-shadow-pulse {
           animation: shadowPulse 6s ease-in-out infinite;
+        }
+        .animate-aurora-slow {
+          animation: aurora 25s ease-in-out infinite alternate;
+        }
+        .animate-aurora-medium {
+          animation: aurora-reverse 20s ease-in-out infinite alternate;
+        }
+        .animate-aurora-fast {
+          animation: aurora 15s ease-in-out infinite alternate;
+        }
+        .card-glow {
+          transition: all 0.5s ease;
+        }
+        .card-glow:hover {
+          box-shadow: 0 0 25px rgba(139, 92, 246, 0.15), 0 0 50px rgba(6, 182, 212, 0.12);
         }
         @keyframes spin {
           from { transform: rotate(0deg); }
@@ -435,6 +461,31 @@ export default function Home() {
             transform: scale(1.1) translateX(-50%);
             opacity: 0.75;
             filter: blur(25px);
+          }
+        }
+        @keyframes aurora {
+          0% {
+            transform: translate(0px, 0px) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.95);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+          }
+        }
+        @keyframes aurora-reverse {
+          0% {
+            transform: translate(0px, 0px) scale(1.1);
+          }
+          50% {
+            transform: translate(-40px, 40px) scale(0.9);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1.1);
           }
         }
       `}</style>
